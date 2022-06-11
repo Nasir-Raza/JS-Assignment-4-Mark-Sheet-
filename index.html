@@ -1,0 +1,137 @@
+<!-- Coded by 
+	 Name	: Nasir Raza
+	 Roll #	: KH01210813250
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Student Marks Sheet
+    </title>
+</head>
+
+<body>
+        <table align="center" width="800" bgcolor="#deebfc" style="text-align:left">
+            <caption
+                style="color: rgb(15, 11, 243); font-family: Arial, Helvetica, sans-serif; font-size: larger;font-weight: bolder; background-color: white">
+                <u>Student Marks Sheet</u>
+            </caption>
+            <tr height="50">
+                <td colspan="2" style="color: rgb(246, 4, 214);font-size: larger;font-weight: bold;">Personal Details:
+                </td>
+            </tr>
+            <tr height="50">
+
+                <td width="200" style="text-align: right;">Student Name : </td>
+                <td><input type="text" id="stdname" size="60" maxlength="50" />
+                (Max. 50 Characters Allowed)
+                </td>
+            </tr>
+
+            <tr height="50">
+                <td style="text-align: right;">Father's Name : </td>
+                <td><input type="text" id="fathername" size="60" maxlength="50" /> (Max. 50 Characters Allowed)
+                </td>
+            </tr>
+            <tr height="30">
+                <td colspan="2" style="color: rgb(246, 4, 214);font-size: larger;font-weight: bold;">Marks Details:
+                </td>
+            </tr>
+            <tr height="30">
+                <td style="text-align: right;">Sindhi : </td>
+                <td><input type="number" id="sindhi" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+            <tr height="30">
+                <td style="text-align: right;">Urdu : </td>
+                <td><input type="number" id="urdu" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">English I : </td>
+                <td><input type="number" id="english1" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">English II : </td>
+                <td><input type="number" id="english2" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Pakistan Studies : </td>
+                <td><input type="number" id="pakstd" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+
+            <tr height="30">
+                <td style="text-align: right;">Islamiat : </td>
+                <td><input type="number" id="islamiat" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Mathematics : </td>
+                <td><input type="number" id="math" size="60" placeholder="Please enter marks obtained (out of 100)..." min="0"  max="100"/> 
+                </td>"
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Biology (Theory) : </td>
+                <td><input type="number" id="biothe" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Biology (Practical) : </td>
+                <td><input type="number" id="bioprc" size="60" placeholder="Please enter marks obtained (out of 25)..." min="0"  max="25"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Physics (Theory) : </td>
+                <td><input type="number" id="phythe" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+            <tr height="30">
+                <td style="text-align: right;">Physics (Practical) : </td>
+                <td><input type="number" id="phyprc" size="60" placeholder="Please enter marks obtained (out of 25)..." min="0"  max="25"/> 
+                </td>
+            </tr>
+            <tr height="30">
+                <td style="text-align: right;">Chemistry (Theory) : </td>
+                <td><input type="number" id="chmthe" size="60" placeholder="Please enter marks obtained (out of 75)..." min="0"  max="75"/> 
+                </td>
+            </tr>
+
+            <tr height="30">
+                <td style="text-align: right;">Chemistry (Practical) : </td>
+                <td><input type="number" id="chmprc" size="60" placeholder="Please enter marks obtained (out of 25)..." min="0"  max="25"/> 
+                </td>
+            </tr>
+
+            <tr height="50">
+                <td colspan="2" align="center">
+                    <button style="color: rgb(246, 4, 214);font-size: large;font-weight: bold;" onclick="submitValues()">Submit</button>
+
+                    <button style="color: rgb(246, 4, 214);font-size: large;font-weight: bold;" onclick="resetValues()">Reset</button>
+                </td>
+            </tr> 
+        </table>
+        <br />
+        <hr />
+    
+    <div>
+        <table align="center" width="800" bgcolor="#deebfc" style="text-align:left" id="marksheet">
+                   
+        </table>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
